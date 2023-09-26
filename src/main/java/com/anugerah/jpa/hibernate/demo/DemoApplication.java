@@ -17,7 +17,7 @@ import com.anugerah.jpa.hibernate.model.repos.CourseRepository;
 @ComponentScan(basePackages = "com.anugerah.jpa.hibernate.*")
 @EntityScan("com.anugerah.jpa.hibernate.*")
 @EnableJpaRepositories(basePackages = "com.anugerah.jpa.hibernate.model.repos.CourseRepository")
-public class DemoApplication implements CommandLineRunner{
+public class DemoApplication implements CommandLineRunner{	
 
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -33,6 +33,8 @@ public class DemoApplication implements CommandLineRunner{
 		Course course = courseRepository.findById(10001L);
 
 		logger.info("Course 10001 -> {}", course);
+
+		courseRepository.save(new Course("Belajat Kubernetes"));
 	}
 
 }
