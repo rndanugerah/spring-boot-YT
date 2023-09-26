@@ -1,1 +1,6 @@
 INSERT INTO COURSE (ID, NAME) VALUES (10001, 'belajar spring boot');
+INSERT INTO COURSE (ID, NAME) VALUES (10002, 'belajar JPA');
+INSERT INTO COURSE (ID, NAME) VALUES (10003, 'belajar Hibernate');
+INSERT INTO COURSE (ID, NAME) VALUES (10004, 'belajar docker');
+
+
